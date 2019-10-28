@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Gossip Project - User</title>
+</head>
+<body>
+	<h1>User</h1>
+	<h2><%= @author.first_name %> <%= @author.last_name %></h2>
+	<p>De <%= @author.city.name %>, <%= @author.age %> ans</p>
+
+
+
+
+
+	<h3>Description</h3>
+		<p><%= @author.description %></p>
+	<h3>Email</h3>
+		<p><%= @author.email %></p>
+	
+	
+	<h3>Member since</h3>
+		<p><%= @author.created_at %></p>
+	<h3>Last profile update</h3>
+		<p><%= @author.updated_at %></p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Gossip Project - Gossip</title>
+</head>
+<body>
+	<h1>Gossip</h1>
+	<h2>Gossip n° <%= @gossip.id %> : <%= @gossip.title %></h2>
+	<p>"<%= @gossip.content %>"</p>
+	<p>Par <a href = <%= "/author/" + @gossip.user_id.to_s %> > <%= @gossip.user.first_name %></a>, le : <%= @gossip.created_at %></p>
+
+
+</body>
+</html>

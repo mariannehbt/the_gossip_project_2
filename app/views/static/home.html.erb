@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Gossip Project - Home</title>
+</head>
+<body>
+	<h1>Bienvenue sur The Gossip Project !</h1>
+
+    <% @gossips.each do |gossip| %>
+      <p>
+        <a href = <%= "/gossip/" + gossip.id.to_s %> > <%= "Gossip n°" + gossip.id.to_s %></a><br/>
+        <%= gossip.title %><br/>
+        <%= gossip.user.first_name %>
+      </p>
+    <% end %>
+
+</body>
+</html>
