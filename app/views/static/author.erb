@@ -6,22 +6,15 @@
 </head>
 <body>
 	<h1>User</h1>
-	<h2><%= @author.first_name %> <%= @author.last_name %></h2>
-	<p>De <%= @author.city.name %>, <%= @author.age %> ans</p>
-
-
-
-
-
-	<h3>Description</h3>
+	<h3><%= @author.first_name %> <%= @author.last_name %></h3>
+		<p>De <%= @author.city.name %>, <%= @author.age %> ans</p>
+	<h5>Description</h5>
 		<p><%= @author.description %></p>
-	<h3>Email</h3>
+	<h5>Email</h5>
 		<p><%= @author.email %></p>
-	
-	
-	<h3>Member since</h3>
+	<h5>Member since</h5>
 		<p><%= @author.created_at %></p>
-	<h3>Last profile update</h3>
+	<h5>Last profile update</h5>
 		<p><%= @author.updated_at %></p>
 </body>
 </html>
